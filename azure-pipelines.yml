@@ -14,18 +14,18 @@ jobs:
       TargetFolder: $(Build.ArtifactStagingDirectory)
   - upload: $(Build.ArtifactStagingDirectory)
     artifact: drop
-jobs:  
+- job: VMDeploy  
 - deployment: VMDeploy
   displayName: web
   environment:
     name:  DT
     resourceType: VirtualMachine
     tags: ENVMachine
-jobs: 
+- job: VMDeploy1
 - deployment: VMDeploy
   displayName: web
   environment:
-    name: <environment name>
+    name: DT
     resourceType: VirtualMachine
   strategy:
       rolling:
