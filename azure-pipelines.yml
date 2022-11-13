@@ -22,7 +22,7 @@ jobs:
     resourceType: VirtualMachine
     tags: ENVMachine
 - job: VMDeploy1
-- deployment: VMDeploy
+- deployment: VMDeploy1
   displayName: web
   environment:
     name: DT
