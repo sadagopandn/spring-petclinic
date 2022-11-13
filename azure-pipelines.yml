@@ -14,14 +14,14 @@ jobs:
       TargetFolder: $(Build.ArtifactStagingDirectory)
   - upload: $(Build.ArtifactStagingDirectory)
     artifact: drop
-- job: VMDeploy  
+- job: VMDeploy111  
 - deployment: VMDeploy
   displayName: web
   environment:
     name:  DT
     resourceType: VirtualMachine
     tags: ENVMachine
-- job: VMDeploy1
+- job: VMDeploy11
 - deployment: VMDeploy1
   displayName: web
   environment:
